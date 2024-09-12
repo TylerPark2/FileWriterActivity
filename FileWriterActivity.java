@@ -46,6 +46,14 @@ public class FileWriterActivity {
         }
     }
 
+    //printFileSize - prints the length of the contents of the file
+    public static void printFileSize (String filename) {
+        // code this ourselves
+        File file = new File (filename);
+        long fileSize = file.length();
+        System.out.println(fileSize);
+    }
+
     public static void main(String[] args) {
         FileWriterActivity fileWriterActivity = new FileWriterActivity();
 
@@ -54,5 +62,5 @@ public class FileWriterActivity {
 
         String topSecretData = "This is top-secret information.";
         fileWriterActivity.createFileInHiddenFolder(topSecretData);
+
     }
-}
