@@ -46,6 +46,7 @@ public class FileWriterActivity {
         }
     }
 
+    //printFileSize - prints the length of the contents of the file
     public static void printFileSize (String filename) {
         // code this ourselves
         File file = new File (filename);
