@@ -55,4 +55,8 @@ public class FileWriterActivity {
         String topSecretData = "This is top-secret information.";
         fileWriterActivity.createFileInHiddenFolder(topSecretData);
     }
+
+    public static void printFileSize (String filename) {
+        // code this ourselves
+    }
 }
